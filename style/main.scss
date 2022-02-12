@@ -103,13 +103,13 @@ ul
                 {
                 .cta-phrase
                     {
-                        display:flex;
-                        place-content: space-evenly;
+                        text-align: center;
                         background-color: var(--color-7);
                         border-radius: 0.5em;
                         padding-left: 1.2em;
                         padding-right: 1.2em;
                         font-family: 'Playfair Display', serif;
+                        
                     }
 
                 .cta-following-paragraph
