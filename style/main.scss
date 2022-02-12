@@ -5,7 +5,6 @@
         -Oswald (regular 400) 'Oswald', sans-serif
 */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Oswald&family=Playfair+Display&display=swap');
-
 :root{
     --color-1: #dd8154;
     --color-2: #3b4937;
@@ -18,19 +17,16 @@
 
     --Background-white: #f7f7f7;
 }
-
 body
 {
     background: var(--Background-white);
     font-family:'Oswald', sans-serif;
     margin: 0;
 }
-
 .navbar
 {
     background-color: white;
     padding: 1em;
-
     .logo
     {
         text-decoration: none;
@@ -41,7 +37,6 @@ body
         border-radius: 0.6em;
         padding: 0.5em 0.5em 0em 0.5em;
     }
-
     nav
     {
         display: none;
@@ -51,13 +46,11 @@ body
             block-size: 1em;
         }
     }
-
     .container
     {
         display: flex;
         place-content: space-between;
     }
-
     .mobile-menu
     {
         cursor: pointer;
@@ -65,28 +58,23 @@ body
         padding: 0.7em;
     }
 }
-
 a
 {
     color: #444444;
 }
-
 p{
     font-family: 'Playfair Display', serif;
     font-size: 2em;
 }
-
 ul
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 .hero
 {
     padding: 1em;
-
     .hero-container
     {
         .grid-container
@@ -95,7 +83,6 @@ ul
             grid-template-columns: 50% 50%;
             padding-top: 0;
             margin: 0;
-
             .left-column
             {
                 padding: 1.2em;
@@ -109,9 +96,7 @@ ul
                         padding-left: 1.2em;
                         padding-right: 1.2em;
                         font-family: 'Playfair Display', serif;
-                        
                     }
-
                 .cta-following-paragraph
                     {
                         text-align: center;
@@ -120,43 +105,10 @@ ul
                         font-family: 'Playfair Display', serif;
                     }
                 }
-            /* display: flex;
-                place-content: space-between space-evenly;
-                
-                .left-column-top
-                {
-                    display:flex;
-                    place-content: space-between space-evenly;
-                    
-                    .cta-phrase
-                    {
-                        background-color: var(--color-7);
-                        border-radius: 0.5em;
-                        padding-left: 1.2em;
-                        padding-right: 1.2em;
-                        font-family: 'Playfair Display', serif;
-                    }
-                }
-
-                .left-column-bottom
-                {
-                    display: flex;
-                    place-content: end center;
-                    .cta-following-paragraph
-                    {
-                        margin: 0em;
-                        padding: 0em;
-                        font-family: 'Playfair Display', serif;
-                    }
-                }
-
-
-          */}   
-            
+            }   
             .right-column
             {
                 display:block;
-
                 .cta-img
                 {
                     block-size: 50%;
