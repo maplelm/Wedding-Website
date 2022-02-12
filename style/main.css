@@ -1,0 +1,70 @@
+/*
+    Fonts that where imported:
+        -Bodoni Moda (regular 400) 'Bodoni Moda', serif
+        -Playfair Display (regular 400) 'Playfair Display', serif
+        -Oswald (regular 400) 'Oswald', sans-serif
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Oswald&family=Playfair+Display&display=swap");
+:root {
+  --color-1: #dd8154;
+  --color-2: #3b4937;
+  --color-3: #7f836e;
+  --color-4: #a2a69f;
+  --color-5: #b7bcb2;
+  --color-6: #888f87;
+  --color-7: #ecc6b0;
+  --color-8: #b4bebc;
+}
+
+body {
+  color: var(--color-1);
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  color: var(--color-7);
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar nav .exit-button {
+  block-size: 1em;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  block-size: 1em;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */

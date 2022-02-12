@@ -1,0 +1,95 @@
+/*
+    Fonts that where imported:
+        -Bodoni Moda (regular 400) 'Bodoni Moda', serif
+        -Playfair Display (regular 400) 'Playfair Display', serif
+        -Oswald (regular 400) 'Oswald', sans-serif
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Oswald&family=Playfair+Display&display=swap');
+
+:root{
+    --color-1: #dd8154;
+    --color-2: #3b4937;
+    --color-3: #7f836e;
+    --color-4: #a2a69f;
+    --color-5: #b7bcb2;
+    --color-6: #888f87;
+    --color-7: #ecc6b0;
+    --color-8: #b4bebc;
+}
+body
+{
+    margin: 0;
+    
+}
+
+.navbar
+{
+    background-color: var(--color-1);
+    margin: 0;
+    padding: 1.2em;
+}
+
+.buttons {
+    align-self: flex-end;
+    block-size: 1.5em;
+    cursor: pointer;
+}
+.exit-buttons
+{
+    block-size: 1.5em;
+    cursor: pointer;
+}
+
+
+.container
+{
+    display: flex;
+    place-content: space-between;
+}
+
+.home-link
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+    background: var(--color-7);
+    border-radius: 5em;
+    padding: .5em;
+    color: var(--color-2);
+    align-self:  center;
+}
+
+.nav-link
+{
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+.navbar nav
+{
+    display: none;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: #20272E;
+    height: 100vh;
+    padding: 1em;
+  }
+
+nav.menu-btn {
+    display: block;
+}
+
+.primary-nav
+{
+    text-decoration: none;
+    list-style-type: none;
+    
+}
