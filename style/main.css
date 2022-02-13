@@ -23,12 +23,16 @@ body {
   margin: 0;
 }
 
-.navbar {
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
   background-color: white;
   padding: 1em;
 }
 
-.navbar .logo {
+header .logo {
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -38,22 +42,15 @@ body {
   padding: 0.5em 0.5em 0em 0.5em;
 }
 
-.navbar nav {
+header nav {
   display: none;
 }
 
-.navbar nav .exit-button {
+header nav .exit-button {
   block-size: 1em;
 }
 
-.navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-between;
-}
-
-.navbar .mobile-menu {
+header .mobile-menu {
   cursor: pointer;
   block-size: 1.7em;
   padding: 0.7em;
@@ -74,60 +71,21 @@ ul {
   padding: 0;
 }
 
-.hero {
-  padding: 1em;
-}
-
-.hero .hero-container .grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+.welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
   padding-top: 0;
   margin: 0;
 }
 
-.hero .hero-container .grid-container .left-column {
+.welcome article {
   padding: 1.2em;
-  /* display: flex;
-                place-content: space-between space-evenly;
-                
-                .left-column-top
-                {
-                    display:flex;
-                    place-content: space-between space-evenly;
-                    
-                    .cta-phrase
-                    {
-                        background-color: var(--color-7);
-                        border-radius: 0.5em;
-                        padding-left: 1.2em;
-                        padding-right: 1.2em;
-                        font-family: 'Playfair Display', serif;
-                    }
-                }
-
-                .left-column-bottom
-                {
-                    display: flex;
-                    place-content: end center;
-                    .cta-following-paragraph
-                    {
-                        margin: 0em;
-                        padding: 0em;
-                        font-family: 'Playfair Display', serif;
-                    }
-                }
-
-
-          */
 }
 
-.hero .hero-container .grid-container .left-column ul .cta-phrase {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: space-evenly;
+.welcome article ul .cta-phrase {
+  text-align: center;
   background-color: var(--color-7);
   border-radius: 0.5em;
   padding-left: 1.2em;
@@ -135,18 +93,17 @@ ul {
   font-family: 'Playfair Display', serif;
 }
 
-.hero .hero-container .grid-container .left-column ul .cta-following-paragraph {
+.welcome article ul .cta-following-paragraph {
   text-align: center;
   margin: 0em;
-  padding: 0em;
+  padding: 1.2em;
   font-family: 'Playfair Display', serif;
+  background-color: var(--color-1);
+  border-radius: 0.5em;
 }
 
-.hero .hero-container .grid-container .right-column {
-  display: block;
-}
-
-.hero .hero-container .grid-container .right-column .cta-img {
-  block-size: 50%;
+.welcome .cta-img {
+  block-size: 30em;
+  padding: 1.2em;
 }
 /*# sourceMappingURL=main.css.map */
