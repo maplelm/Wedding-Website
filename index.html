@@ -11,7 +11,7 @@
 
     <body>
         <!-- This is the navigation bar up top -->
-        <header>
+        <header class="navbar">
                 <a class="logo" href="#">Moriah's Baller Ass Wedding</a>
                 <img class="mobile-menu" id="mobile-menu" src="./assets/list.svg" alt="menu button">
                 <nav>
@@ -28,11 +28,28 @@
         <section class="welcome">
             <article>
                 <ul>
-                    <li><p class="cta-phrase" a>Please join us as we get married!</p></li>
-                    <li><p class="cta-following-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae veritatis itaque mollitia culpa natus excepturi nemo neque, aut dolorum debitis optio facilis sint pariatur, ipsa aliquam, eius accusantium earum inventore.</p></li>
+                    <li><p class="heading" a>Please join us as we get married!</p></li>
+                    <li><p class="cta-following-paragraph">Lorem ipsum dolor sit amet consectetur,<br>
+                         adipisicing elit. Molestiae veritatis itaque mollitia culpa natus excepturi nemo neque,<br>
+                         aut dolorum debitis optio facilis sint pariatur,<br> ipsa aliquam, eius accusantium earum inventore.</p></li>
                 </ul>
             </article>
-            <img class="cta-img" src="./assets/Homephoto.png" alt="photo of me and moriah">
+            <!------>
         </section>
+        <section class="comments">
+            <header class="heading">
+                <p>if you have any questions you can submit them below</p>
+            </header>
+            <form action="">
+                <label for="PersonsName">Enter Your Name:</label><br>
+                <input type="text" id="PersonsName" name="PersonsName"><br>
+                <label for="question">Enter your question:</label><br>
+                <input type="text" id="personsQuestion" name="question"><br>
+                <input type="button" value="Submit">
+            </form>
+        </section>
+        <footer>
+            <img class="footer-img" src="./assets/Homephoto.png" alt="photo of me and moriah">
+        </footer>
     </body>
 </html>

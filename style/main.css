@@ -23,7 +23,16 @@ body {
   margin: 0;
 }
 
-header {
+.heading {
+  text-align: center;
+  background-color: var(--color-7);
+  border-radius: 0.5em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +41,7 @@ header {
   padding: 1em;
 }
 
-header .logo {
+.navbar .logo {
   text-decoration: none;
   font-weight: bold;
   color: black;
@@ -42,15 +51,15 @@ header .logo {
   padding: 0.5em 0.5em 0em 0.5em;
 }
 
-header nav {
+.navbar nav {
   display: none;
 }
 
-header nav .exit-button {
+.navbar nav .exit-button {
   block-size: 1em;
 }
 
-header .mobile-menu {
+.navbar .mobile-menu {
   cursor: pointer;
   block-size: 1.7em;
   padding: 0.7em;
@@ -78,19 +87,19 @@ ul {
   place-content: center;
   padding-top: 0;
   margin: 0;
+  /* .cta-img
+    {
+        block-size: 30em;
+        display: flex;
+        align-items: center;
+        padding: 1.2em;
+        background-color: var(--color-7);
+        border-radius: 0.5em;
+    }*/
 }
 
 .welcome article {
   padding: 1.2em;
-}
-
-.welcome article ul .cta-phrase {
-  text-align: center;
-  background-color: var(--color-7);
-  border-radius: 0.5em;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
-  font-family: 'Playfair Display', serif;
 }
 
 .welcome article ul .cta-following-paragraph {
@@ -100,10 +109,5 @@ ul {
   font-family: 'Playfair Display', serif;
   background-color: var(--color-1);
   border-radius: 0.5em;
-}
-
-.welcome .cta-img {
-  block-size: 30em;
-  padding: 1.2em;
 }
 /*# sourceMappingURL=main.css.map */
