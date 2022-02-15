@@ -5,7 +5,8 @@
         -Oswald (regular 400) 'Oswald', sans-serif
 */
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&family=Oswald&family=Playfair+Display&display=swap');
-:root{
+:root
+{
     --color-1: #dd8154;
     --color-2: #3b4937;
     --color-3: #7f836e;
@@ -19,7 +20,7 @@
 }
 body
 {
-    background: var(--Background-white);
+    background: var(--color-2);
     font-family:'Oswald', sans-serif;
     margin: 0;
 }
@@ -29,8 +30,8 @@ body
     text-align: center;
     background-color: var(--color-7);
     border-radius: 0.5em;
-    padding-left: 1.2em;
-    padding-right: 1.2em;
+    /*padding-left: 1.2em;
+    padding-right: 1.2em;*/
     font-family: 'Playfair Display', serif;
 }
 
@@ -38,7 +39,7 @@ body
 {
     display: flex;
     place-content: space-between;
-    background-color: white;
+    background-color: var(--color-3);
     padding: 1em;
     .logo
     {
@@ -66,6 +67,20 @@ body
         padding: 0.7em;
     }
 }
+.welcome-img
+{
+    padding: 1.2em 0em 1.2em 0em;
+    display: flex;
+    place-content: center;
+    block-size: 30em;
+    img
+    {
+        margin: 0.5em;
+        padding: 1.2em;
+        background-color: var(--color-1);
+        border-radius: .5em;
+    }
+}
 a
 {
     color: #444444;
@@ -86,13 +101,11 @@ ul
     place-content: center;
     padding-top: 0;
     margin: 0;
-
     article
     {
         padding: 1.2em;
         ul
         {
-
         .cta-following-paragraph
             {
                 text-align: center;
@@ -104,18 +117,11 @@ ul
             }
         }
     }   
-   /* .cta-img
-    {
-        block-size: 30em;
-        display: flex;
-        align-items: center;
-        padding: 1.2em;
-        background-color: var(--color-7);
-        border-radius: 0.5em;
-    }*/
 }   
 
-.commetns
+.comments
 {
-    
+    display: flex;
+    place-content: space-evenly;
+    margin: 3em;
 }
