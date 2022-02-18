@@ -138,9 +138,8 @@ nav
 {
     padding: 1.2em 0em 1.2em 0em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap:wrap;
-    block-size: 30em;
     
     img
     {
@@ -183,7 +182,7 @@ nav
     form
     {
         background-color: var(--color-1);
-        margin-top: 1.2em;
+        margin-top: 0.0em;
         padding: 1.2em;
         border-radius: 0.5em;
     }
