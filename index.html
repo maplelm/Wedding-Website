@@ -15,7 +15,7 @@
                 <a class="logo" href="#">Moriah's Baller Ass Wedding</a>
                 <img class="mobile-menu" id="mobile-menu" src="./assets/list.svg" alt="menu button">
                 <nav>
-                <img class="exit-button" id="close-menu-button" src="./assets/cross.svg" alt="close menu button">
+                <img class="mobile-menu-exit" id="mobile-menu-exit" src="./assets/cross.svg" alt="close menu button">
                     <ul class="primary-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Honeymoon Fund</a></li>
@@ -53,4 +53,19 @@
             </form>
         </section>
     </body>
+    <script>
+        const testbutton = document.getElementById('test-button');
+        const mobileBtn = document.getElementById('mobile-menu')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-menu-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
 </html>
