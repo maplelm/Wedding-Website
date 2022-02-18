@@ -20,10 +20,30 @@
 }
 body
 {
+    display: flex;
+    flex-direction: column;
     background: var(--color-2);
     font-family:'Oswald', sans-serif;
     margin: 0;
 }
+
+a
+{
+    color: #444444;
+}
+p{
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+}
+ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 .heading
 {
@@ -118,30 +138,20 @@ nav
 {
     padding: 1.2em 0em 1.2em 0em;
     display: flex;
-    place-content: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
     block-size: 30em;
+    
     img
     {
         margin: 0.5em;
         padding: 1.2em;
         background-color: var(--color-1);
         border-radius: .5em;
+        
     }
 }
-a
-{
-    color: #444444;
-}
-p{
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
-}
-ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 .welcome
 {
     display: flex;
@@ -168,5 +178,13 @@ ul
 
 .comments
 {
+    display: flex;
     margin: 3em;
+    form
+    {
+        background-color: var(--color-1);
+        margin-top: 1.2em;
+        padding: 1.2em;
+        border-radius: 0.5em;
+    }
 }
