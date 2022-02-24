@@ -18,8 +18,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background: var(--color-2);
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   margin: 0;
 }
 
@@ -28,19 +30,16 @@ body {
   background-color: var(--color-7);
   border-radius: 0.5em;
   /*padding-left: 1.2em;
-    padding-right: 1.2em;*/
-  font-family: 'Playfair Display', serif;
+  padding-right: 1.2em;*/
+  font-family: "Playfair Display", serif;
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: space-between;
   background-color: var(--color-3);
   padding: 1em;
 }
-
 .navbar .logo {
   text-decoration: none;
   font-weight: bold;
@@ -50,15 +49,12 @@ body {
   border-radius: 0.6em;
   padding: 0.5em 0.5em 0em 0.5em;
 }
-
 .navbar nav {
   display: none;
 }
-
 .navbar nav .exit-button {
   block-size: 1em;
 }
-
 .navbar .mobile-menu {
   cursor: pointer;
   block-size: 1.7em;
@@ -79,11 +75,9 @@ nav {
   height: 100vh;
   padding: 1em;
 }
-
 nav ul.primary-nav {
   margin-top: 5em;
 }
-
 nav li a {
   color: white;
   text-decoration: none;
@@ -92,7 +86,6 @@ nav li a {
   font-size: 1.3em;
   text-align: right;
 }
-
 nav li a:hover {
   font-weight: bold;
 }
@@ -104,20 +97,23 @@ nav li a:hover {
   block-size: 1.7em;
 }
 
-.welcome-img {
-  padding: 1.2em 0em 1.2em 0em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  place-content: center;
-  block-size: 30em;
-}
+@media screen and (max-width: 800px) {
+  .welcome-img {
+    padding: 1.2em;
+    border-radius: 0.5em;
+    margin: 1.2em 10% 1.2em 10%;
+    background-color: var(--color-1);
+  }
 
-.welcome-img img {
-  margin: 0.5em;
+  .welcome-img-desktop-only {
+    display: none;
+  }
+}
+.welcome-img, .welcome-img-desktop-only {
   padding: 1.2em;
+  border-radius: 0.5em;
+  margin: 1.2em 10% 1.2em 10%;
   background-color: var(--color-1);
-  border-radius: .5em;
 }
 
 a {
@@ -125,7 +121,7 @@ a {
 }
 
 p {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 2em;
 }
 
@@ -136,28 +132,23 @@ ul {
 }
 
 .welcome {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   place-content: center;
   padding-top: 0;
   margin: 0;
 }
-
 .welcome article {
   padding: 1.2em;
 }
-
 .welcome article ul .cta-following-paragraph {
   text-align: center;
   margin: 0em;
   padding: 1.2em;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   background-color: var(--color-1);
   border-radius: 0.5em;
 }
 
 .comments {
   margin: 3em;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

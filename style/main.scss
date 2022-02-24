@@ -20,6 +20,8 @@
 }
 body
 {
+    display: flex;
+    flex-direction: column;
     background: var(--color-2);
     font-family:'Oswald', sans-serif;
     margin: 0;
@@ -114,20 +116,31 @@ nav
     block-size: 1.7em;
 }
 
-.welcome-img
+@media screen and (max-width: 800px) 
 {
-    padding: 1.2em 0em 1.2em 0em;
-    display: flex;
-    place-content: center;
-    block-size: 30em;
-    img
+    .welcome-img
     {
-        margin: 0.5em;
         padding: 1.2em;
+        border-radius: 0.5em;
+        margin: 1.2em 10% 1.2em 10%;
+    
         background-color: var(--color-1);
-        border-radius: .5em;
+    }
+    .welcome-img-desktop-only
+    {
+        display:none;
     }
 }
+    .welcome-img, .welcome-img-desktop-only
+    {
+        padding: 1.2em;
+        border-radius: 0.5em;
+        margin: 1.2em 10% 1.2em 10%;
+    
+        background-color: var(--color-1);
+        
+    }
+
 a
 {
     color: #444444;
@@ -142,6 +155,7 @@ ul
     margin: 0;
     padding: 0;
 }
+
 .welcome
 {
     display: flex;
